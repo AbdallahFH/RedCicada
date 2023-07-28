@@ -1,0 +1,5 @@
+C:\Users\abdal\RedCicada\bin\Release\net7.0\publish\RedCicada.exe
+C:\Users\abdal\RedCicada\bin\Release\net7.0\publish\RedCicada.dll
+C:\Users\abdal\RedCicada\bin\Release\net7.0\publish\RedCicada.deps.json
+C:\Users\abdal\RedCicada\bin\Release\net7.0\publish\RedCicada.runtimeconfig.json
+C:\Users\abdal\RedCicada\bin\Release\net7.0\publish\RedCicada.pdb

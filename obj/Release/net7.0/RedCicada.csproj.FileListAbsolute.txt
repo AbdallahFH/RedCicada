@@ -1,0 +1,15 @@
+C:\Users\abdal\RedCicada\bin\Release\net7.0\RedCicada.exe
+C:\Users\abdal\RedCicada\bin\Release\net7.0\RedCicada.deps.json
+C:\Users\abdal\RedCicada\bin\Release\net7.0\RedCicada.runtimeconfig.json
+C:\Users\abdal\RedCicada\bin\Release\net7.0\RedCicada.dll
+C:\Users\abdal\RedCicada\bin\Release\net7.0\RedCicada.pdb
+C:\Users\abdal\RedCicada\obj\Release\net7.0\RedCicada.csproj.AssemblyReference.cache
+C:\Users\abdal\RedCicada\obj\Release\net7.0\RedCicada.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\abdal\RedCicada\obj\Release\net7.0\RedCicada.AssemblyInfoInputs.cache
+C:\Users\abdal\RedCicada\obj\Release\net7.0\RedCicada.AssemblyInfo.cs
+C:\Users\abdal\RedCicada\obj\Release\net7.0\RedCicada.csproj.CoreCompileInputs.cache
+C:\Users\abdal\RedCicada\obj\Release\net7.0\RedCicada.dll
+C:\Users\abdal\RedCicada\obj\Release\net7.0\refint\RedCicada.dll
+C:\Users\abdal\RedCicada\obj\Release\net7.0\RedCicada.pdb
+C:\Users\abdal\RedCicada\obj\Release\net7.0\RedCicada.genruntimeconfig.cache
+C:\Users\abdal\RedCicada\obj\Release\net7.0\ref\RedCicada.dll
