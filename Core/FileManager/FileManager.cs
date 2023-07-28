@@ -3,12 +3,10 @@ using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 
 [Serializable]
-class DataFile
-{
-    float f;
-}
+public class DataFile
+{}
 [Serializable]
-class ImageFile : DataFile
+public class ImageFile : DataFile
 {
     public byte[] Data;
     public int Width;

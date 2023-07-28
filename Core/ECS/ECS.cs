@@ -4,6 +4,7 @@ namespace RedCicada
     {
         public Entity entity;
         public virtual void Start(){}
+        public virtual void Render(float deltaTime){}
         public virtual void Update(float deltaTime){}
     }
     class Entity : Component
@@ -42,6 +43,12 @@ namespace RedCicada
                 component.Start();
             }
         }
+        public static void Render(float deltaTime){
+            foreach (T component in components)
+            {
+                component.Render(deltaTime);
+            }
+        }
         public static void Update(float deltaTime){
             foreach (T component in components)
             {
@@ -51,6 +58,8 @@ namespace RedCicada
     }
     class TransformSystem : BaseSystem <Transform>{}
     class ScriptSystem : BaseSystem<CicadaScript>{}
+    class SpriteSystem : BaseSystem<SpriteRenderer>{}
+
     class Scene
     {
         public string Name = "New Scene";
@@ -66,6 +75,7 @@ namespace RedCicada
         public void Update(float deltaTime){
             ScriptSystem.Update(deltaTime);
             TransformSystem.Update(deltaTime);
+            SpriteSystem.Update(deltaTime);
         }
     }
     class SceneSystem 

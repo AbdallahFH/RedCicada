@@ -25,7 +25,7 @@ public class Program{
       
    }
    static void OnLoad(){
-      controller = new ImGuiController(Game.gl = Game.window.CreateOpenGL(),Game.window,Game.Input);
+      controller = new ImGuiController(OpenGL.gl = Game.window.CreateOpenGL(),Game.window,Game.Input);
       ImGuiNET.ImGui.GetIO().ConfigFlags = ImGuiNET.ImGuiConfigFlags.DockingEnable;
       for (int i = 0; i < Game.Input.Keyboards.Count; i++)
       {
@@ -37,8 +37,6 @@ public class Program{
       Game.sceneSystem.LoadedScene.entities.Add(player);
    }
    static void OnRender(double deltaTime){
-      Game.Render();
-      
       controller.Update((float)deltaTime);
       //Editor
       ImGuiNET.ImGui.Begin("App");
