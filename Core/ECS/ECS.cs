@@ -69,8 +69,12 @@ namespace RedCicada
             Name = name;
         }
         public void Start(){
+            SpriteSystem.Start();
             ScriptSystem.Start();
             TransformSystem.Start();
+        }
+        public void Render(float deltaTime){
+            SpriteSystem.Render(deltaTime);
         }
         public void Update(float deltaTime){
             ScriptSystem.Update(deltaTime);

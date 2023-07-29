@@ -85,7 +85,6 @@ namespace RedCicada{
             ImageResult idle01 = ImageResult.FromMemory(File.ReadAllBytes("Assets/Idle/Idle01.png"),ColorComponents.RedGreenBlueAlpha);
             texture = new Texture(idle01, GLEnum.LinearMipmapLinear,GLEnum.Linear);
             texture.Bind();
-            //Projection = Matrix4x4.CreateOrthographicOffCenter(0,appOptions.Resolution.x,appOptions.Resolution.y,0,-10.0f,10.0f);
             OpenGL.Projection = Matrix4x4.CreatePerspectiveFieldOfView(RedCicada.Math.DegreesToRadians(60),(float)appOptions.Resolution.x/(float)appOptions.Resolution.y,0.1f,1000);
             ImageFile f = new ImageFile();
             f.Data = idle01.Data;
@@ -111,7 +110,7 @@ namespace RedCicada{
 
             OpenGL.View = Matrix4x4.CreateLookAt(cameraPosition,cameraPosition+Vector3.UnitZ,Vector3.UnitY);
             SpriteSystem.Render((float)deltaTime);
-            vao.Bind();
+            /*vao.Bind();
             material.Use();
             material.SetMatrix("Transform",transform.Matrix);
             material.SetMatrix("View",OpenGL.View);
@@ -119,6 +118,7 @@ namespace RedCicada{
             material.SetInt("Texture",(int)texture.ID);
             texture.Bind();
             OpenGL.gl.DrawElements(PrimitiveType.Triangles,(uint)indices.Length,DrawElementsType.UnsignedInt,null);
+        */
         }
         void OnUpdate(double deltaTime){
             sceneSystem.LoadedScene.Update((float)deltaTime);
